@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* viewport units: percentage of: vh (viewport height), vw (viewport width), vmin (min of vw or vh) */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 4vmin; /* means percentage of width or height of browser - whatever is smaller */
+    color: darkgray;
+    letter-spacing: 1vmin;
+}
+
+#markers {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    gap: 1vmin;
+    margin-top: 1.5vmin;
+
+}
+
+#markers > div {
+    height: 10vmin;
+    border-width: 5vmin;
+    border-style: solid;
+    border-color: lightgrey transparent transparent;
+    transform: scale(0.7);
+}
+
+#markers > div:hover {  /* this is a sudo selector - so it says when someone does sth, it changes. */
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
+    gap: 1vmin;
+    margin-top: -4vmin;
+}
+
+#board > div {
+    border-radius: 100%;
+    border: 0.1vmin solid grey;
+}
+
+button {
+    margin-top: 4vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    border-radius: 4vmin;
+    border: 0.1vmin solid grey;
+    color: grey;
+
+}
+
+button:hover {
+    color: white;
+    bochground-color: darkgrey;
+
+}
+
+header, h1, button {
+    text-transform: uppercase;
+}
+
