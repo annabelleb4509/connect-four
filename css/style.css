@@ -23,7 +23,6 @@ header {
     grid-template-columns: repeat(7, 10vmin);
     gap: 1vmin;
     margin-top: 1.5vmin;
-
 }
 
 #markers > div {
@@ -34,7 +33,7 @@ header {
     transform: scale(0.7);
 }
 
-#markers > div:hover {  /* this is a sudo selector - so it says when someone does sth, it changes. */
+#markers > div:hover {  /* this is a pseudo selector - so it says when someone does sth, it changes. */
     transform: scale(0.9);
     transition: all 300ms ease-in-out;
 }
@@ -59,7 +58,6 @@ button {
     border-radius: 4vmin;
     border: 0.1vmin solid grey;
     color: grey;
-
 }
 
 button:hover {

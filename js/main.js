@@ -92,7 +92,6 @@ function checkWinner(row, column) {
 // did someone win? player : null
 function checkVertical(row, column) {
     return countAdjacent(row, column, -1, 0) >= 3 ? state.board[column][row] : null;
-  
 }
 
 function checkHorizontal(row, column) {
